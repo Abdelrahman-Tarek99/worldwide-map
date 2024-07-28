@@ -7,8 +7,6 @@ let svgElement = document.getElementById("svgMap");
 const defaultViewBox = { x: 450, y: 200, width: 800, height: 340 };
 let startX, startY;
 let currentViewBox = { ...defaultViewBox };
-
-// Attach event listeners
 zoomOutBtn.addEventListener("click", (event) => resetViewBox(event));
 pinClasses.forEach((pin) => {
   pin.addEventListener("click", (event) => {
@@ -19,20 +17,13 @@ pinClasses.forEach((pin) => {
 document.querySelectorAll("#svgMap path:not(.pin)").forEach((path) => {
   path.addEventListener("click", (event) => handleCountryClick(event));
 });
-
 countryCards.forEach((card) => {
   card.addEventListener("click", (event) => {
     resetStyles(event);
     applySelectedStyles(event, card);
   });
 });
-
-// Reset zoom when clicking outside the map
 document.addEventListener("click", (event) => resetZooming(event));
-
-//////////////////////////////////////////////////////////////////////////////
-//! Functions
-//reset selected styles
 function resetStyles(event) {
   event.stopPropagation();
   console.log("Resetting Styles");
@@ -41,7 +32,6 @@ function resetStyles(event) {
   });
   pinClasses.forEach((pin) => (pin.style.fill = "#001081")); // Reset to default color
 }
-// apply selected styles
 function applySelectedStyles(event, element) {
   event.stopPropagation();
   const id = element.id;
@@ -57,7 +47,6 @@ function applySelectedStyles(event, element) {
     element.classList.add("activatePinAndCard");
   }
 }
-//Reset ViewBox
 function resetViewBox(event) {
   // console.log("EVEN TARGET", event.target);
   // console.log("Resetting ViewBox");
@@ -68,8 +57,6 @@ function resetViewBox(event) {
     `${defaultViewBox.x} ${defaultViewBox.y} ${defaultViewBox.width} ${defaultViewBox.height}`
   );
 }
-
-//reset Country Cards
 function selectedTargetCountryCards(card, dataSetID) {
   if (card.dataset.country === dataSetID) {
     card.classList.add("country-cards-active");
@@ -79,7 +66,6 @@ function selectedTargetCountryCards(card, dataSetID) {
     card.classList.remove("country-cards-active");
   }
 }
-// Handling Country Click
 function handleCountryClick(event) {
   event.stopPropagation();
   resetStyles(event);
@@ -115,8 +101,6 @@ function handleCountryClick(event) {
   };
   smoothZoom(document.getElementById("svgMap"), newViewBox, 280);
 }
-
-// Smooth Zoom
 function smoothZoom(svgElement, targetViewBox, duration) {
   let start = null;
   const initialViewBox = svgElement
@@ -143,7 +127,6 @@ function smoothZoom(svgElement, targetViewBox, duration) {
 
   requestAnimationFrame(step);
 }
-//reset zooming
 function resetZooming(event) {
   event.stopPropagation();
   resetStyles(event);
