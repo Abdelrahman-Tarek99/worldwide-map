@@ -1,0 +1,137 @@
+#svgMap {
+    cursor: pointer;
+    position: relative;
+  }
+  .country {
+    cursor: pointer;
+  }
+  .marker {
+    display: none;
+  }
+  path {
+    stroke: #000;
+    stroke-width: 0.1;
+    transition: all ease 0.3s;
+  }
+  path:hover {
+    fill: #525dc1;
+  }
+  .Countries {
+    fill: #fff;
+  }
+  .Ejada-Egypt {
+    fill: #4477ff;
+  }
+  .Ejada-Jordon {
+    fill: #0000ff;
+  }
+  .Ejada-India {
+    fill: #525dc1;
+  }
+  .Ejada-SaudiArabia {
+    fill: #d4d6f0;
+  }
+  .active {
+    fill: #D4D6F0 !important;
+  }
+  .Inactive {
+    fill: #f2f4ff;
+  }
+  .pin {
+    transition: opacity 0.3s;
+  }
+  .pinOpacityInactive {
+    opacity: 0;
+  }
+  .pinActive {
+    fill: #4477ff;
+  }
+  .pinInactive {
+    fill: #001081;
+  }
+  .pin:hover {
+    cursor: pointer;
+    fill: #4477ff !important;
+  }
+  .cards-position {
+    position: absolute;
+    height: 100%;
+    top: 0%;
+    left: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  .country-cards {
+    display: none;
+    width: 368px;
+    background-color: #fff;
+    border: 1px solid #d4d6f0;
+    border-radius: 7px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: all 0.3s;
+  }
+  .country-cards {
+    margin-top: 14px;
+  }
+  .country-cards:hover {
+    border-color: #001081;
+    scale: 1.05;
+  }
+  .country-cards-active {
+    display: flex !important;
+  }
+  .country-card-body {
+    padding: 29px 16px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+  }
+  .country-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #404042;
+  }
+  .country-card-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #59595c;
+  }
+  .country-card-flag {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  .country-card-flag img {
+    object-fit: cover;
+  }
+  .activatePinAndCard {
+    border: 1px solid #001081;
+  }
+  .cards-Inactive {
+    display: none;
+  }
+  .zoomOutBtnMap {
+    opacity: 0;
+    position: absolute;
+    width: 45px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    top: 5%;
+    right: 3%;
+    z-index: 100;
+    transition: all 0.3s;
+  }
+  .zoomOutBtnMapActive{
+    opacity: 1;
+  }
+  .zoomOutBtnMap:hover {
+    border-color: #4477ff;
+    scale: 1.05;
+  }
+  

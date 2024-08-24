@@ -1,0 +1,32 @@
+<svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_874_951" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="42">
+<path d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_874_951)">
+<path d="M-10.918 0H73.25V42.084H-10.918V0Z" fill="#010101"/>
+</g>
+<mask id="mask1_874_951" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="42">
+<path d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z" fill="white"/>
+</mask>
+<g mask="url(#mask1_874_951)">
+<path d="M-10.918 14.0293H73.25V28.0573H-10.918V14.0293Z" fill="white"/>
+</g>
+<mask id="mask2_874_951" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="42">
+<path d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z" fill="white"/>
+</mask>
+<g mask="url(#mask2_874_951)">
+<path d="M-10.918 28.0566H73.25V42.0846H-10.918V28.0566Z" fill="#067B3F"/>
+</g>
+<mask id="mask3_874_951" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="42">
+<path d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z" fill="white"/>
+</mask>
+<g mask="url(#mask3_874_951)">
+<path d="M31.166 21.042L-10.918 42.084V0L31.166 21.042Z" fill="#CE2028"/>
+</g>
+<mask id="mask4_874_951" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="42" height="42">
+<path d="M21 42C32.598 42 42 32.598 42 21C42 9.40202 32.598 0 21 0C9.40202 0 0 9.40202 0 21C0 32.598 9.40202 42 21 42Z" fill="white"/>
+</mask>
+<g mask="url(#mask4_874_951)">
+<path d="M13.7089 21.7679L11.9156 21.9354L12.1519 23.7269L10.9033 22.4245L9.65455 23.7269L9.89089 21.9354L8.09766 21.7679L9.6409 20.8367L8.65315 19.3254L10.3416 19.9551L10.9033 18.2383L11.4649 19.9551L13.1533 19.3254L12.1657 20.8367L13.7089 21.7679Z" fill="white"/>
+</g>
+</svg>

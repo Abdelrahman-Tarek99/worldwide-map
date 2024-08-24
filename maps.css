@@ -67,7 +67,7 @@ path:hover {
   display: none;
   width: 368px;
   background-color: #fff;
-  border: 1px solid #d4d6f0;
+  border: 2px solid #d4d6f0;
   border-radius: 7px;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
   z-index: 100;
@@ -106,10 +106,12 @@ path:hover {
   height: 42px;
   border-radius: 50%;
   margin-right: 15px;
-  background-color: blue;
+}
+.country-card-flag img {
+  object-fit: cover;
 }
 .activatePinAndCard {
-  border: 1px solid #001081;
+  border: 2px solid #001081;
 }
 .cards-Inactive {
   display: none;
@@ -131,4 +133,7 @@ path:hover {
 .zoomOutBtnMap:hover {
   border-color: #4477ff;
   scale: 1.05;
+}
+.country-cards:focus{
+  outline: none;
 }
